@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/contactUs.css">
+	<link rel="stylesheet" type="text/css" href="./extraFiles/Financialtools.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<div style="
+		background:url(images/Home-Page-Background.jpg);
+		background-size: cover;
+		color: white;
+		background-attachment: fixed;
+">
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg">
+		<div class="container">
+  			<a class="navbar-brand" href="#">
+  				 <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  				Shedbale_Finance
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="fa fa-times"></span>
+  			</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    		<ul class="navbar-nav m-auto justify-content-center">
+    		  <li class="nav-item active">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="index.html">
+        			<span>Home</span>
+        			<span class="sr-only">(current)</span>
+        		</a>
+		      </li>
+    	  	  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="aboutUs.html"><span>About Us</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="productAndServices.html"><span>Services</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="sip.html"><span>SIP</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="contactUs.html">
+        			<span class="contactUsSpan">Contact Us</span>
+        		</a>
+			  </li>
+			  
+			  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="Financialtools.html"><span>Financial Tools</span>
+        		</a>
+			  </li>
+			  
+    		</ul>
+    			  
+		    <form class="form-inline my-2 my-lg-0">
+    			<ul class="navbar-nav justify-content-center">
+    		  <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-twitter" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-facebook" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-linkedin" aria-hidden="true"></i>
+        		</a>
+		      </li>
+		  </ul>
+    			  
+		    </form>
+		</div>
+	</div>
+</nav>
+
+<!-- nav bar end -->
+
+<body>
+
+
+<div class="topnav">
+​ <div class="top">
+  <ul>    
+<li> <a href="Financialtools.html">How much SIP</a></li>
+<li><a href="GoalRoadMap.html">Goal Roadmap</a></li>
+<li><a href="Sipcalculator.html">SIP Calculator</a></li>
+<li><a href="lumsump_calculator.html">Lumpsump Calculator</a></li>
+<li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+<li><a href="emi_calculator.html">EMI Calculator</a></li>
+</ul>
+</div>
+​</div>
+​
+</body>
+<div class="innermktcontarea">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+<div class="row">
+    <div class="col-sm-6">
+        <div class="sipcalculator_list sipinputpanel">
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                   Monthly Inv. (SIP - in <span><i class="fa fa-inr" aria-hidden="true"></i></span>. )</label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="sipamnttxt" value="5000" class="sipcalculatorinput" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range1" value="5000" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sipfrequency_list" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2">
+                        <label>
+                            SIP Frequency</label>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <div class="savemoneyfront_list sipfrequency_listinner sipfrequency">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" id="weekly" name="sip_frequency" value="1" class="calculatorinputradio" />
+                                        <span>Weekly</span>
+                                    </label>
+                                </li>
+                                <li class="active">
+                                    <label>
+                                        <input type="radio" id="monthly" name="sip_frequency" checked="checked" value="2"
+                                            class="calculatorinputradio" />
+                                        <span>Monthly</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" id="quarterly" name="sip_frequency" value="3" class="calculatorinputradio" />
+                                        <span>Quarterly</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" id="halfyearly" name="sip_frequency" value="4" class="calculatorinputradio" />
+                                        <span>Half Yearly </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                   Time Horizon (in years) </label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="noofinsalltxt" value="1" class="sipcalculatorinput" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range3" value="1" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                    Expected Return (%)</label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="expctintresttxt" value="12" class="sipcalculatorinput" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range2" value="12" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sipamountlist" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2">
+                        <label class="sipamountlistlabel">
+                            Your Installment Duration is</label>
+                    </div>
+                    <div class="col-lg-9 col-md-10" style="line-height: 40px;">
+                        <span id="Investduryears">0</span> year <span id="Investdurmonths">1</span>&nbsp;<span
+                            id="monthlabel">months</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculate_btn" style="display: none;">
+                <button type="button" class="staticbtn" id="sipCalculator" onclick="sipcalculations()">
+                    Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sipamountResultbox">
+                    <div class="sipamountResultboxRow">
+                        <span>Investment Amount</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="InvestmentAmount"></span>
+                        </p>
+                    </div>
+                    <div class="sipamountResultboxRow">
+                        <span>Expected Amount</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="ExpectedAmount"></span>
+                        </p>
+                    </div>
+                    <div class="sipamountResultboxRow">
+                        <span>Wealth Gain</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="WealthGain"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="sipamountResultGraph" >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sipcalcresultpopup" class="modal calculatorresult_popupinfo" role="dialog"
+    style="display: none;" data-backdrop="static">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;</button>
+                <h4 class="modal-title">
+                    Calculator Result</h4>
+            </div>
+            <div class="modal-body">
+                <div class="calculatorresult_topcont">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="top_sectors_listinner">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            SIP Amount (<span style="float: none;"><i class="fa fa-inr" aria-hidden="true"></i></span>)
+                                            <span>:</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span id="sip_amount_span"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            SIP Frequency <span>:</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span class="text-capitalize" id="sip_frequency_span"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            Expected Return <span>:</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span id="sip_exinterest_rate_span"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            Number of Installments <span>:</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span id="num_of_installment_span"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            Investment Duration Is <span>:</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span id="years_span"></span>&nbsp;Year <span id="months_span"></span>&nbsp;<span
+                                                id="monthlabelpop">Months</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="calculatorresult_topcontinner">
+                                <div id="sipcalculatorchart" class="chartsipcalculator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculatorresult_bottomcont">
+                    <h5>
+                        Based on your Systematic Investment, your corpus will grow to &nbsp;(<span><i class="fa fa-inr"
+                            aria-hidden="true"></i></span>) <span id="futurevalue_span">500</span></h5>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="top_sectors_listinner">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            Total amount invested (<span style="float: none;"><i class="fa fa-inr" aria-hidden="true"></i></span>)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span class="bold" id="investment_span"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-7 col-xs-12">
+                                        <div class="top_sectors_listinnercont">
+                                            Your earnings (<span style="float: none;"><i class="fa fa-inr" aria-hidden="true"></i></span>)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-5 col-xs-12">
+                                        <div class="top_sectors_listinnerval">
+                                            <span class="bold" id="earnings_span"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="container-fluid">
+			<div class="row justify-content-center d-flex p-4" style="background-color: #04166b; color: white;">
+			<div class="col-lg-3">
+				<p>Address</p>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+
+			</div>
+			<div class="col-lg-3">
+				<p>Phone No.</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Email</p>
+				<p>
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					emailId@gmail.com
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Developed By:</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Saurav Gawli
+				</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Kumar Shubham
+				</p>
+			</div>
+		</div>
+</div>
+		<div class=" text-center" style="font-size: 15px;
+    padding: 6px;
+    background: #000f56;
+    color: #ffffffc2;">
+    						©Copyright ShedbaleFinance
+    		
+		</div>
+<!-- /footer -->
+<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		navbar=document.querySelector("nav");
+		navbar.classList.toggle('sticky',window.scrollY>0);
+	});
+</script>
+</body>
+</html>

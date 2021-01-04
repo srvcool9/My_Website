@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/contactUs.css">
+	<link rel="stylesheet" type="text/css" href="./extraFiles/Financialtools.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<div style="
+		background:url(images/Home-Page-Background.jpg);
+		background-size: cover;
+		color: white;
+		background-attachment: fixed;
+">
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg">
+		<div class="container">
+  			<a class="navbar-brand" href="#">
+  				 <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  				Shedbale_Finance
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="fa fa-times"></span>
+  			</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    		<ul class="navbar-nav m-auto justify-content-center">
+    		  <li class="nav-item active">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="index.html">
+        			<span>Home</span>
+        			<span class="sr-only">(current)</span>
+        		</a>
+		      </li>
+    	  	  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="aboutUs.html"><span>About Us</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="productAndServices.html"><span>Services</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="sip.html"><span>SIP</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="contactUs.html">
+        			<span class="contactUsSpan">Contact Us</span>
+        		</a>
+			  </li>
+			  
+			  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="Financialtools.html"><span>Financial Tools</span>
+        		</a>
+			  </li>
+			  
+    		</ul>
+    			  
+		    <form class="form-inline my-2 my-lg-0">
+    			<ul class="navbar-nav justify-content-center">
+    		  <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-twitter" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-facebook" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-linkedin" aria-hidden="true"></i>
+        		</a>
+		      </li>
+		  </ul>
+    			  
+		    </form>
+		</div>
+	</div>
+</nav>
+
+<!-- nav bar end -->
+
+<body>
+
+
+<div class="topnav">
+​ <div class="top">
+  <ul>    
+<li> <a href="Financialtools.html">How much SIP</a></li>
+<li><a href="GoalRoadMap.html">Goal Roadmap</a></li>
+<li><a href="Sipcalculator.html">SIP Calculator</a></li>
+<li><a href="lumsump_calculator.html">Lumpsump Calculator</a></li>
+<li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+<li><a href="emi_calculator.html">EMI Calculator</a></li>
+</ul>
+</div>
+​</div>
+​
+</body>
+
+<div class="innermktcontarea">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+<div class="retirementcalculator_info">
+    <div class="retirementcalculator_form">
+        <div class="retirementcalculator_list">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Date of Birth :</label>
+                        <div class="datepick_info">
+                            <input type="text" name="end_date" id="txtretirementDate" autocomplete="off" class="filter-textfields form-control"
+                                placeholder="DD-MM-YYYY" onblur="return ShowCurrentAge('txtretirementDate');" />
+                            <div class="datepick_icon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Current Age :</label>
+                        <input type="number" id="txtretirecurr" readonly="readonly" autocomplete="off" onclick="ShowCurrentAge('txtretirementDate');"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Retirement Age :</label>
+                        <input type="number" id="txtRetirementAge" maxlength="2" autocomplete="off" onblur="return WorkLifeLeft(); getCalculations();"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Required Retirement Corpus (<span><i class="fa fa-rupee" aria-hidden="true"></i></span>)
+                            :</label>
+                        <input type="number" id="txtRetirementCorpus" maxlength="11" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Current Savings (<span><i class="fa fa-rupee" aria-hidden="true"></i></span>) :</label>
+                        <input type="number" id="txtretirecurrentSavings" maxlength="9" autocomplete="off"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Monthly Savings (<span><i class="fa fa-rupee" aria-hidden="true"></i></span>) :</label>
+                        <input id="txtMonthlySavings" type="number" maxlength="9" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Expected Inflation (<span>%</span>) Annual :</label>
+                        <input id="txtInflationRate" type="number" maxlength="8" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="input-field form-group">
+                        <label>
+                            Expected Return (<span>%</span>) Annual :</label>
+                        <input id="txtExpectedReturnInvestment" maxlength="8" autocomplete="off" type="number"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="submit_btninfo">
+                <a href="#" class="staticbtn" onclick="javascript:calculateretirement();">Calculate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="retirementcalcresult" style="display: none;">
+    <div class="title_info">
+        <h3>
+            Calculator Result</h3>
+    </div>
+    <div class="toachieve_txt retureclcretxt">
+        You need to save every month <strong>(<i class="fa fa-rupee" aria-hidden="true"></i>)</strong>
+        <strong id="lblyouneedtosave"></strong>&nbsp;to achieve Retirement Corpus
+    </div>
+    <div class="schemeplan_list">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6">
+                <div class="schemeplan_listname">
+                    Working Life Left (Years)</div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-6">
+                <div class="schemeplan_listval" id="retireworkleft">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6">
+                <div class="schemeplan_listname">
+                    Required Retirement Corpus will be (<i class="fa fa-rupee" aria-hidden="true"></i>)</div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-6">
+                <div class="schemeplan_listval" id="lblfuturevalueofcorpus">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6">
+                <div class="schemeplan_listname">
+                    Your current and monthly saving will be (<i class="fa fa-rupee" aria-hidden="true"></i>)</div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-6">
+                <div class="schemeplan_listval" id="lblfuturevalueofsavings">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6">
+                <div class="schemeplan_listname">
+                    Remaining Retirement Corpus to achieve (<i class="fa fa-rupee" aria-hidden="true"></i>)</div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-6">
+                <div class="schemeplan_listval" id="lblborrowingamount">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scrollup fa fa-angle-up">
+</div>
+
+<!-- footer -->
+<div class="container-fluid">
+			<div class="row justify-content-center d-flex p-4" style="background-color: #04166b; color: white;">
+			<div class="col-lg-3">
+				<p>Address</p>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+
+			</div>
+			<div class="col-lg-3">
+				<p>Phone No.</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Email</p>
+				<p>
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					emailId@gmail.com
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Developed By:</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Saurav Gawli
+				</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Kumar Shubham
+				</p>
+			</div>
+		</div>
+</div>
+		<div class=" text-center" style="font-size: 15px;
+    padding: 6px;
+    background: #000f56;
+    color: #ffffffc2;">
+    						©Copyright ShedbaleFinance
+    		
+		</div>
+<!-- /footer -->
+<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		navbar=document.querySelector("nav");
+		navbar.classList.toggle('sticky',window.scrollY>0);
+	});
+</script>
+</body>
+</html>

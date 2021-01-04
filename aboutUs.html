@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/aboutUs.css">
+	<style type="text/css">
+
+.aboutUsFirstDiv{
+			background:#040131ba url(images/gradient-geometric-shape-background_78532-374.jpg);
+			background-size: cover;
+			color:white;
+			background-blend-mode: multiply;
+			background-attachment: fixed;
+		}
+		button{
+			position: relative;
+			background-color: transparent !important;
+			/*color:blue !important;*/
+			overflow: hidden;
+    		/*transition: 2s ease !important;*/
+		}
+		button:before{
+				content: '';
+			    display: block;
+    			position: absolute;
+    			background-color: transparent;
+    			width: 0%;
+    			height: 100%;
+    			transform: translate(-50%,-50%) rotate(45deg) scale(3.5);
+    			left: 50%;
+    			top: 50%;
+    			z-index: -1;
+    			transition: all 0.8s linear !important; 
+		}
+		button:hover::before{
+			    content: '';
+			    display: block;
+    			position: absolute;
+    			background-color: #0069d9;
+    			width: 100%;
+    			transform: translate(-50%,-50%) rotate(45deg) scale(3.5);
+    			height: 100%;
+    			left: 50%;
+    			top: 50%;
+    			z-index: -1;
+    			/*transition: all 0.8s ease !important;*/
+		}
+	</style>
+</head>
+<body>
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg">
+		<div class="container">
+  			<a class="navbar-brand" href="#">
+  				 <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  				Shedbale_Finance
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="fa fa-times"></span>
+  			</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    		<ul class="navbar-nav m-auto justify-content-center">
+    		  <li class="nav-item active">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="index.html">
+        			<span>Home</span>
+        			<span class="sr-only">(current)</span>
+        		</a>
+		      </li>
+    	  	  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="aboutUs.html">
+        			<span class="aboutUsSpan">About Us</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="productAndServices.html"><span>Services</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="sip.html"><span>SIP</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="contactUs.html"><span>Contact Us</span>
+        		</a>
+			  </li>
+			  
+			  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="Financialtools.html"><span>Financial Tools</span>
+        		</a>
+			  </li>
+			  
+    		</ul>
+
+    		<form class="form-inline my-2 my-lg-0">
+    			<ul class="navbar-nav justify-content-center">
+    		  <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-twitter" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-facebook" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-linkedin" aria-hidden="true"></i>
+        		</a>
+		      </li>
+		  </ul>
+    			  
+		    </form>
+		</div>
+	</div>
+</nav>
+
+<!-- nav bar end -->
+
+
+
+<div class="container-fluid  pt-5 aboutUsFirstDiv">
+	<div class="row justify-content-center d-flex p-5" >
+		<h1>What can we Help You With?</h1>
+		<p class="ml-5 mr-5 text-center pl-5 pr-5">It's a fine balancing act when eight million insurance buyers and 40+ insurers transact a few lac crores of insurance cover and a few thousand crores of insurance premium on a platform with complete confidence every year.</p>
+		<a class="btn btn-primary scrollDownBtn" href="#overviewDiv">Scroll Down</a>
+
+	</div>
+	<div class="row ml-5 mr-5 pl-5 pr-5">
+		
+		<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-5">
+			<a class="overViewAnchor" href="#keyFeaturesDiv">
+			<i class="fa fa-cogs aboutIcon"></i>
+			<h4 class="mt-2">Key Features</h4>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-5">
+			<a class="overViewAnchor" href="#mission&VisionDiv">
+			<i class="fa fa-vimeo aboutIcon"></i>
+			<h4 class="mt-2">Mission & Vision</h4>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-5">
+			<a class="overViewAnchor" href="#serviceDeliveryPropositionDiv">
+			<i class="fa fa-comments aboutIcon"></i>
+			<h4 class="mt-2">Service Delivery Proposition</h4>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-6 col-sm-6 text-center mb-5">
+			<a class="overViewAnchor" href="#whyChooseUsDiv">
+			<i class="fa fa-line-chart aboutIcon"></i>
+			<h4 class="mt-2">Why Choose Us</h4>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="container" id="overviewDiv">
+	
+
+	<div class="row justify-content-center m-5">
+		<h1 class="text-center">Let's have an Overview  </h1>
+	</div>
+	<div class="row ml-5 mr-5 pb-4" id="keyFeaturesDiv">
+		<div class="col-lg-6">
+			<img src="images/gettyimages-1134900360-2048x2048.jpg" class="img-fluid keyFeatures" >
+			<!-- style="border:2rem solid black;" -->
+		</div>
+		<div class="col-lg-6 mb-5 mt-5">
+			<h3>Key Features</h3>
+			<p class="text-justify">While most people reading this are leading healthy, long lives and will hopefully continue to do so, the risk of being hospitalized due to a sudden illness or critical injury is always around. A risk such as this must not be taken lightly, and fortunately new age health insurances are available to cover you in a ring of financial protection against rising medical expenses.</p>
+			<button class="btn btn-primary aboutPoints">Read More</button>
+		</div>
+	</div>
+
+	<div class="row ml-5 mr-5 pb-4" id="mission&VisionDiv">
+		<div class="col-lg-6 mb-5 mt-5">
+			<h3>Mission & Vision</h3>
+			<p class="text-justify"> To become the most admired and trusted upon insurance companies in India, by keeping up with all the promises that we make to you, our customers, by providing the most convenient dealing process, creating sustainable values, and empowering all our employees.</p>
+			<button class="btn btn-primary aboutPoints">Read More</button>
+		</div>
+		<div class="col-lg-6">
+			<img src="images/gettyimages-1129342100-2048x2048.jpg" class="img-fluid missionAndVission">
+			<!-- style="border:2rem solid black;" -->
+		</div>
+	</div>
+
+	<div class="row ml-5 mr-5 pb-4" id="serviceDeliveryPropositionDiv">
+		<div class="col-lg-6">
+			<img src="images/gettyimages-890164084-2048x2048.jpg" class="img-fluid serviceDeliveryProposition" >
+			<!-- style="border:2rem solid black;" -->
+		</div>
+		<div class="col-lg-6 mt-5 mb-5">
+			<h3>Service Delivery Proposition</h3>
+			<p class="text-justify">Delivering a service that prioritizes risk prevention will require a major shift in how the industry has traditionally viewed its value proposition. Insurers would need to rethink the role they play, the value they can bring to clients and how to really leverage their data to help reduce risk and prevent losses.</p>
+			<button class="btn btn-primary aboutPoints">Read More</button>
+		</div>
+	</div>
+
+	<div class="row ml-5 mr-5 pb-5" id="whyChooseUsDiv">
+		<div class="col-lg-6 mt-5 mb-5">
+			<h3>Why Choose Us</h3>
+			<p class="text-justify">At no cost, we compare rates from different companies, provide expert advice on coverage, and help you secure a policy that fits your needs. If you ever need help with your policy, we're a call or click away. From quoting to claims, we're here for you!</p>
+			<button class="btn btn-primary aboutPoints">Read More</button>
+		</div>
+		<div class="col-lg-6">
+			<img src="images/gettyimages-918377542-2048x2048.jpg" class="img-fluid whyChooseUs" >
+			<!-- style="border:2rem solid black;" -->
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<!-- footer -->
+<div class="container-fluid">
+			<div class="row justify-content-center d-flex p-4" style="background-color: #04166b; color: white;">
+			<div class="col-lg-3">
+				<p>Address</p>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+
+			</div>
+			<div class="col-lg-3">
+				<p>Phone No.</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Email</p>
+				<p>
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					emailId@gmail.com
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Developed By:</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Saurav Gawli
+				</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Kumar Shubham
+				</p>
+			</div>
+		</div>
+</div>
+		<div class=" text-center" style="font-size: 15px;
+    padding: 6px;
+    background: #000f56;
+    color: #ffffffc2;">
+    						©Copyright Shedbalefinance
+    		
+		</div>
+<!-- /footer -->
+<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		navbar=document.querySelector("nav");
+		navbar.classList.toggle('sticky',window.scrollY>0);
+	});
+</script>
+</body>
+</html>

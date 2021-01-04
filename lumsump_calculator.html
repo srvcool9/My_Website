@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="extraFiles/contactUs.css">
+	<link rel="stylesheet" type="text/css" href="./extraFiles/Financialtools.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<div style="
+		background:url(images/Home-Page-Background.jpg);
+		background-size: cover;
+		color: white;
+		background-attachment: fixed;
+">
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg">
+		<div class="container">
+  			<a class="navbar-brand" href="#">
+  				 <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  				Shedbale_Finance
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="fa fa-times"></span>
+  			</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    		<ul class="navbar-nav m-auto justify-content-center">
+    		  <li class="nav-item active">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="index.html">
+        			<span>Home</span>
+        			<span class="sr-only">(current)</span>
+        		</a>
+		      </li>
+    	  	  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="aboutUs.html"><span>About Us</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="productAndServices.html"><span>Services</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="sip.html"><span>SIP</span>
+        		</a>
+		      </li>
+		      <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="contactUs.html">
+        			<span class="contactUsSpan">Contact Us</span>
+        		</a>
+			  </li>
+			  
+			  <li class="nav-item">
+        		<a class="nav-link mr-2 pr-0 pl-0 ml-2" href="Financialtools.html"><span>Financial Tools</span>
+        		</a>
+			  </li>
+			  
+    		</ul>
+    			  
+		    <form class="form-inline my-2 my-lg-0">
+    			<ul class="navbar-nav justify-content-center">
+    		  <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-twitter" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-facebook" aria-hidden="true"></i>
+        		</a>
+		      </li>
+
+		      <li class="nav-item">
+        		<a class="nav-link" href="#">
+        			<i class="fa fa-linkedin" aria-hidden="true"></i>
+        		</a>
+		      </li>
+		  </ul>
+    			  
+		    </form>
+		</div>
+	</div>
+</nav>
+
+<!-- nav bar end -->
+
+<body>
+
+
+<div class="topnav">
+​ <div class="top">
+  <ul>    
+<li> <a href="Financialtools.html">How much SIP</a></li>
+<li><a href="GoalRoadMap.html">Goal Roadmap</a></li>
+<li><a href="Sipcalculator.html">SIP Calculator</a></li>
+<li><a href="lumsump_calculator.html">Lumpsump Calculator</a></li>
+<li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+<li><a href="emi_calculator.html">EMI Calculator</a></li>
+</ul>
+</div>
+​</div>
+​
+</body>
+
+<div class="innermktcontarea">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+<div class="row">
+    <div class="col-sm-6">
+        <div class="sipcalculator_list sipinputpanel">
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                    Lumpsum Amount (<span><i class="fa fa-inr" aria-hidden="true"></i></span>)</label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="lumpsumamnttxt" value="5000" class="sipcalculatorinput form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range1" value="5000" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                    Time Horizon (in years)</label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="lumpsumtenure" value="3" class="sipcalculatorinput form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range4" value="3" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sipamountlist">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="sipamountlistlabel">
+                                    Expected Return (%)</label>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <input type="number" id="expctintresttxt" value="12" class="sipcalculatorinput form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="range_input">
+                            <input type="text" id="range2" value="12" name="range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculate_btn" style="display: none;">
+                <button type="button" class="staticbtn" id="sipCalculator" onclick="lumpsumcalculations()">
+                    Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sipamountResultbox">
+                    <div class="sipamountResultboxRow">
+                        <span>Investment Amount</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="InvestmentAmount"></span>
+                        </p>
+                    </div>
+                    <div class="sipamountResultboxRow">
+                        <span>Expected Amount</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="ExpectedAmount"></span>
+                        </p>
+                    </div>
+                    <div class="sipamountResultboxRow">
+                        <span>Wealth Gain</span>
+                        <p>
+                            <i class="fa fa-inr" aria-hidden="true"></i><span id="WealthGain"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="lumpsumamountResultGraph">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="StaticRegText">
+            <p>
+                
+
+                To know In Which Funds you should Invest based on your time horizon, Return Expectation
+                & Risk Profile. <a class="StaticRegBtn" href="javascript://" data-toggle="collapse" data-target="#freeportfolioform">Click Here to Register</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="collapse fade" id="freeportfolioform">
+<div class="mfportformwrap ctrlwrap">
+    <span>Please Sign Up</span>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="mfportfoliofields">
+                <input name="ctl00$ContentPlaceHolder1$mfportfoliosignup$txtname" type="text" id="txtname" placeholder="Name" data-placement="bottom" onkeypress="javascript:return AplhabtesOnly(event.keyCode,event.which,this.id);" autocomplete="off" />
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="mfportfoliofields">
+                <input name="ctl00$ContentPlaceHolder1$mfportfoliosignup$txtemail" type="text" id="txtemail" placeholder="Email Id" data-placement="bottom" onblur="javascript:return emailvalidate(this.id)" autocomplete="off" />
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="mfportfoliofields otp">
+                <input name="ctl00$ContentPlaceHolder1$mfportfoliosignup$txtmobileno" type="text" maxlength="10" id="txtmobileno" placeholder="Mobile No" data-placement="bottom" onkeypress="javascript:return isNumberKey(event,this.id);" autocomplete="off" onblur="javascript:return validatephonenumber(this.id);" />
+                <a href="javascript://" onclick="getOTPSignup('txtmobileno');">GET OTP</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="mfportfoliofields">
+                <input name="ctl00$ContentPlaceHolder1$mfportfoliosignup$txtotp" type="text" maxlength="4" id="txtotp" placeholder="Enter OTP" data-placement="bottom" onkeypress="javascript:return isNumberKey(event,this.id);" onblur="return mobOtpCorrectValuesignup(this.id);" autocomplete="off" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-3">
+            <div class="mfportfoliofields btnhldr">
+                <input type="submit" name="ctl00$ContentPlaceHolder1$mfportfoliosignup$btn" value="Submit" onclick="return mfportfolioform();" id="ContentPlaceHolder1_mfportfoliosignup_btn" class="mfportfbtn" />
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<input name="ctl00$ContentPlaceHolder1$mfportfoliosignup$hdninvestoption" type="hidden" id="hdninvestoption" value="lupsum" />
+
+
+<div id="lumpsumresultpopup" class="modal calculatorresult_popupinfo" role="dialog"
+    style="display: none;" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;</button>
+                <h4 class="modal-title">Calculator Result</h4>
+            </div>
+            <div class="modal-body">
+                <div class="calculatorresult_topcont">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>Lumpsum Amount (<span class="GridRupees">Rs.</span>)
+                                        </td>
+                                        <td>
+                                            <span id="lumpsum_amount"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tenure (years)
+                                        </td>
+                                        <td>
+                                            <span id="lumpsum_Tenure"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expected Return
+                                        </td>
+                                        <td>
+                                            <span id="lumpsum_exinterest_rate"></span>%
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="calculatorresult_topcontinner">
+                                <div id="lumpsumcalculatorchart" class="chartsipcalculator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculatorresult_bottomcont">
+                    <h5>Based on your Lumpsum Investment, your corpus will grow to &nbsp;(<span class="GridRupees">Rs.</span>)
+                        <span id="futurevalue_span">500</span></h5>
+                    <table class="table table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="top_sectors_listinnercont">
+                                        <i class="fa fa-circle invest" aria-hidden="true"></i>Your investment amount (<span
+                                            class="GridRupees">Rs.</span>)
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="bold" id="investment_span"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="top_sectors_listinnercont">
+                                        <i class="fa fa-circle earnings" aria-hidden="true"></i>Your earning on investment
+                                        (<span class="GridRupees">Rs.</span>)
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="bold" id="earnings_span"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scrollup fa fa-angle-up">
+
+<!-- footer -->
+<div class="container-fluid">
+			<div class="row justify-content-center d-flex p-4" style="background-color: #04166b; color: white;">
+			<div class="col-lg-3">
+				<p>Address</p>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+				</p>
+
+
+			</div>
+			<div class="col-lg-3">
+				<p>Phone No.</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+91-1234567890
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Email</p>
+				<p>
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					emailId@gmail.com
+				</p>
+			</div>
+			<div class="col-lg-3">
+				<p>Developed By:</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Saurav Gawli
+				</p>
+				<p>
+					<i class="fa fa-user" aria-hidden="true"></i>
+					Kumar Shubham
+				</p>
+			</div>
+		</div>
+</div>
+		<div class=" text-center" style="font-size: 15px;
+    padding: 6px;
+    background: #000f56;
+    color: #ffffffc2;">
+    						©Copyright ShedbaleFinance
+    		
+		</div>
+<!-- /footer -->
+<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	window.addEventListener("scroll",function(){
+		navbar=document.querySelector("nav");
+		navbar.classList.toggle('sticky',window.scrollY>0);
+	});
+</script>
+</body>
+</html>
